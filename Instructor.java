@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class Instructor {
+public class Supervisor {
     private ArrayList<String> subjects = new ArrayList<>();
 
-    public Instructor() {
+    public Supervisor() {
         // Initialize with some existing subjects
         subjects.add("DS230 OOP");
         subjects.add("DS231 Intro to Programming");
@@ -12,7 +12,7 @@ public class Instructor {
 
     // Displays all subjects for the instructor
     public void displaySubjects() {
-        System.out.println("Available Subjects for Instructor:");
+        System.out.println("Available Subjects for Supervisor:");
         for (String subject : subjects) {
             System.out.println("- " + subject);
         }
