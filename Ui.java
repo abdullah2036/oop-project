@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ui {
     private Courses courses = new Courses();
-    private Instructor instructor = new Instructor();
+    private Supervisor supervisor = new Supervisor();
     private Scanner scanner = new Scanner(System.in);
 
     public void start() {
@@ -61,9 +61,9 @@ public class Ui {
         }
     }
 
-    private void instructorMenu() {
+    private void supervisorMenu() {
         while (true) {
-            System.out.println("\nInstructor Menu - Choose an action: add, delete, display, view subjects, or back");
+            System.out.println("\nsupervisor Menu - Choose an action: add, delete, display, view subjects, or back");
             String action = scanner.nextLine();
 
             if (action.equals("add")) {
